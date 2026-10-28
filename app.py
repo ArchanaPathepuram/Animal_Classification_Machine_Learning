@@ -1,21 +1,14 @@
 import streamlit as st
 import joblib
 import numpy as np
-
 model = joblib.load("zoo_random_forest.pkl")
 st.sidebar.title("🦁 Zoo Animal Prediction")
-
 st.sidebar.markdown("""
 ### About Project
-
 **Model:** Random Forest Classifier
-
 **Dataset:** Zoo Dataset
-
 **Features:** 16
-
 **Animal Classes:** 7
-
 """)
 
 
